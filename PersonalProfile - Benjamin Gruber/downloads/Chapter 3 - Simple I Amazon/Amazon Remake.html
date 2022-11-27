@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<title>Simple.com - Spend less, Smile more</title>
+<html>
+    <style>
+
+        body
+         {
+            background-image: url(Background.webp);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+        }
+
+        .flex
+        {
+            display:flex;
+        }
+
+        .bar-text
+        {
+            font-size: large;
+        }
+
+        .rounded
+        {
+            border-radius: 10%;
+        }
+
+        .navbar
+        {
+            width: 100%;
+            height: 75px;
+
+            background-color: rgb(26, 26, 26);
+
+            flex-flow:1 1 row;
+
+            overflow: hidden;
+
+            align-items: center;
+            justify-content: center;
+
+            flex-wrap: wrap;
+        }
+
+        .navbarelement
+        {
+            margin: 0px;
+            
+            margin-left: 0.5%;
+            margin-right: 0.5%;
+
+            height: 75px;
+        }
+
+        .navbarbutton
+        {
+            background-color: rgb(26, 26, 26);
+            color: white;
+
+            border: 1px solid rgb(26, 26, 26);
+            transition-duration: 0.1s;
+        }
+
+        .navbarbutton:hover
+        {
+            border: 1px solid white;
+        }
+
+        .navbarbutton:active
+        {
+            color: gray;
+        }
+
+        .navbarsearchbar
+        {
+            height: 50px;
+            width: 50%;
+
+            align-self:center;
+            justify-self: center;
+        }
+
+        .actionbar
+        {
+            width: 100%;
+            height: 50px;
+
+            background-color: rgb(46, 53, 59);
+
+            flex-flow:1 1 row;
+
+            overflow: hidden;
+
+            align-items: center;
+            justify-content: center;
+
+            flex-wrap: wrap;
+        }
+
+        .actionbarelement
+        {
+            margin: 10px;
+
+            height: min-content;
+            width: max-content;
+
+            font-size: 20px;
+        }
+
+        .actionbarbutton
+        {
+            background-color: rgb(46, 53, 59);
+            color: white;
+
+            border: 1px solid rgb(46, 53, 59);
+            transition-duration: 0.1s;
+        }
+
+        .actionbarbutton:hover
+        {
+            border: 1px solid white;
+        }
+
+        .actionbarbutton:active
+        {
+            color: gray;
+        }
+
+        .content
+        {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .presitem
+        {
+            height: 400px;
+            width: 375px;
+
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+
+            background-color: white;
+
+            margin: 10px;
+        }
+
+        .presitemheader
+        {
+            font-size: 27.5px;
+            color: black;
+
+            align-self: flex-start;
+
+            margin: 0%;
+            margin-left:15px;
+        }
+
+        .presitemimage
+        {
+            margin: 10px;
+        }
+
+        .credits
+        {
+            width: 100%;
+            height: 250px;
+
+            background-color: rgb(46, 53, 59);
+
+            justify-content: center;
+        }
+
+    </style>
+
+    <body>
+        <div>
+            <div class="navbar flex">
+                <button type="button" class="navbarbutton navbarelement bar-text">
+                    <img src="Logo.png" class="navbarelement">
+                </button>
+
+
+                <button type="button" class="navbarbutton navbarelement bar-text">
+                    <p style="color: gray; margin-bottom: 0%;">
+                        Liefern nach</p>
+                    <p style="margin-top: 0%;"><b>Österreich</b></p>
+                </button>
+
+
+                <input type="text" placeholder="Suche..." class="navbarsearchbar">
+
+
+                <button type="button" class="navbarbutton navbarelement bar-text"
+                 style="width: min-content;">
+                        <img src="Country.png" style="height: 25px; margin-top: 5px;">
+                </button>
+
+
+                <button type="button" class="navbarbutton navbarelement bar-text">
+                    <p style="margin-bottom: 0%;">Hallo, Anmelden</p>
+                    <p style="margin-top: 0%;"><b>Konto und Listen</b></p>
+                </button>
+
+                <button type="button" class="navbarbutton navbarelement bar-text">
+                    <p style="margin-bottom: 0%;">Warenrücksendungen</p>
+                    <p style="margin-top: 0%;"><b>und Bestellungen</b></p>
+                </button>
+
+                <button type="button" class="navbarbutton bar-text flex" style="flex-direction: row;">
+                    <img src="Cart.png" class="navbarelement" style="order: -1; height: 65px; margin-right: 5px;">
+                    <p><b>Einkaufswagen</b></p>
+                </button>
+            </div>
+
+
+
+
+
+            <div class="actionbar flex">
+                <button class="actionbarbutton">
+                    <p class="actionbarelement">
+                        Angebote des Tages
+                    </p>
+                </button>
+
+                <button class="actionbarbutton">
+                    <p class="actionbarelement">
+                        Kundenservice
+                    </p>
+                </button>
+
+                <button class="actionbarbutton">
+                    <p class="actionbarelement">
+                        Geschenkkarten
+                    </p>
+                </button>
+
+                <button class="actionbarbutton">
+                    <p class="actionbarelement">
+                        Wunschlisten
+                    </p>
+                </button>
+
+                <button class="actionbarbutton">
+                    <p class="actionbarelement">
+                        Verkaufen bei Simple
+                    </p>
+                </button>
+            </div>
+
+            <div class="content flex"  style="flex-wrap: wrap;">
+                <div class="presitem flex">
+                    <p class="presitemheader"><b>Elektronik</b></p>
+                    <a target="_blank" href="https://www.amazon.com/-/de/b?node=16225009011&pf_rd_r=WZZKPKFW8NRG6HHVT2EE&pf_rd_p=cb21fcb6-cf00-4d2e-bc24-b046d48dcf84&pd_rd_r=c89a71f4-d774-4074-a1b5-b49dda923b7f&pd_rd_w=PQGqk&pd_rd_wg=Qxi36&ref_=pd_gw_unk" style="align-self: flex-start; margin-left: 5px;"><img class="presitemimage" src="Electronics.jpg" style="width: 350px;"></a>
+                    <a target="_blank" href="https://www.amazon.com/-/de/b?node=16225009011&pf_rd_r=WZZKPKFW8NRG6HHVT2EE&pf_rd_p=cb21fcb6-cf00-4d2e-bc24-b046d48dcf84&pd_rd_r=c89a71f4-d774-4074-a1b5-b49dda923b7f&pd_rd_w=PQGqk&pd_rd_wg=Qxi36&ref_=pd_gw_unk" style="align-self: flex-start; margin-left: 15px;">Mehr</a>
+                </div>
+
+                <div class="presitem flex">
+                    <p class="presitemheader"><b>Gaming-Zubehör</b></p>
+                    <a target="_blank" href="https://www.amazon.com/-/de/b?node=23508887011&pf_rd_r=WZZKPKFW8NRG6HHVT2EE&pf_rd_p=f09d3d7f-f10f-44db-ac8f-80180f773afb&pd_rd_r=c89a71f4-d774-4074-a1b5-b49dda923b7f&pd_rd_w=RXwl6&pd_rd_wg=Qxi36&ref_=pd_gw_unk" style="align-self: flex-start; margin-left: 5px;"><img class="presitemimage" src="Gaming.jpg" style="width: 350px; height: 232.5px;"></a>
+                    <a target="_blank" href="https://www.amazon.com/-/de/b?node=23508887011&pf_rd_r=WZZKPKFW8NRG6HHVT2EE&pf_rd_p=f09d3d7f-f10f-44db-ac8f-80180f773afb&pd_rd_r=c89a71f4-d774-4074-a1b5-b49dda923b7f&pd_rd_w=RXwl6&pd_rd_wg=Qxi36&ref_=pd_gw_unk" style="align-self: flex-start; margin-left: 15px;">Mehr</a>
+                </div>
+
+                <div class="presitem flex">
+                    <p class="presitemheader"><b>Kleidung</b></p>
+                    <a target="_blank" href="https://www.amazon.com/s?k=sweatshirts&i=fashion-womens-intl-ship&language=de&pd_rd_r=9f571c79-9cbb-4373-8486-ab67698ae4d8&pd_rd_w=RiAL7&pd_rd_wg=BZnGf&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pf_rd_r=GDDHH82RTZRYAPE8QS57&ref=pd_gw_unk" style="align-self: flex-start; margin-left: 5px;"><img class="presitemimage" src="Clothes.jpg" style="width: 350px; height: 232.5px;"></a>
+                    <a target="_blank" href="https://www.amazon.com/s?k=sweatshirts&i=fashion-womens-intl-ship&language=de&pd_rd_r=9f571c79-9cbb-4373-8486-ab67698ae4d8&pd_rd_w=RiAL7&pd_rd_wg=BZnGf&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pf_rd_r=GDDHH82RTZRYAPE8QS57&ref=pd_gw_unk" style="align-self: flex-start; margin-left: 15px;">Mehr</a>
+                </div>
+
+                <div class="presitem flex" style="flex-wrap: wrap;">
+                    <p class="presitemheader"><b>Möbel</b></p>
+                    <a target="_blank" href="https://www.amazon.com/s?k=Home+bedding&i=kitchen-intl-ship&language=de&pd_rd_r=9f571c79-9cbb-4373-8486-ab67698ae4d8&pd_rd_w=lBGIF&pd_rd_wg=BZnGf&pf_rd_p=bbbef69f-3d9e-41ab-b1eb-e08d5690939b&pf_rd_r=GDDHH82RTZRYAPE8QS57&ref=pd_gw_unk" style="align-self: flex-start; margin-left: 5px;"><img class="presitemimage" src="https://fastcdn.pro/FileGallery/sermehiranian.com/Posts/3360_SL%20CR.jpg" style="width: 350px; height: 232.5px;"></a>
+                    <a target="_blank" href="https://www.amazon.com/s?k=Home+bedding&i=kitchen-intl-ship&language=de&pd_rd_r=9f571c79-9cbb-4373-8486-ab67698ae4d8&pd_rd_w=lBGIF&pd_rd_wg=BZnGf&pf_rd_p=bbbef69f-3d9e-41ab-b1eb-e08d5690939b&pf_rd_r=GDDHH82RTZRYAPE8QS57&ref=pd_gw_unk" style="align-self: flex-start; margin-left: 15px;">Mehr</a>
+                </div>
+
+                <div class="presitem flex" style="flex-wrap: wrap;">
+                    <p class="presitemheader"><b>Gaming-Merchandise</b></p>
+                    <a target="_blank" href="https://www.amazon.com/s?k=gaming+hats&language=de&pd_rd_r=9f571c79-9cbb-4373-8486-ab67698ae4d8&pd_rd_w=yqIWi&pd_rd_wg=BZnGf&pf_rd_p=aae1da38-b146-405e-9d82-f406c3b2a5ee&pf_rd_r=GDDHH82RTZRYAPE8QS57&ref=pd_gw_unk" style="align-self: flex-start; margin-left: 5px;"><img class="presitemimage" src="https://xceedgaming.com/wp-content/uploads/2019/04/xceed-gaming-merchandise-2019.jpg" style="width: 350px; height: 232.5px;"></a>
+                    <a target="_blank" href="https://www.amazon.com/s?k=gaming+hats&language=de&pd_rd_r=9f571c79-9cbb-4373-8486-ab67698ae4d8&pd_rd_w=yqIWi&pd_rd_wg=BZnGf&pf_rd_p=aae1da38-b146-405e-9d82-f406c3b2a5ee&pf_rd_r=GDDHH82RTZRYAPE8QS57&ref=pd_gw_unk" style="align-self: flex-start; margin-left: 15px;">Mehr</a>
+                </div>
+            </div>
+
+            <div class="credits flex">
+                <button class="actionbarbutton">
+                    <p class="actionbarelement" style="color: white;">
+                        <b>Über Simple</b>
+                        <br>
+                        <br>
+                        Simple wurde am 04.08 2021 als kleines Project gelauncht.
+                        <br>
+                        Uns wurde dabei jedoch bewusst, dass unser 'kleines Projekt' riesigen Erfolg hatte
+                        <br> 
+                        und wir bauten unsere erste Shopping-Wesbsite daraus.
+                        <br>
+                    </p>
+                </button>
+            </div>
+        </div>
+    </body>
+
+</html>

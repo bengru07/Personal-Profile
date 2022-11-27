@@ -1,0 +1,220 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <style>
+            body {background-color: rgb(255, 255, 255); margin: 0;}
+           
+            p {color: white;}
+
+            a:link{
+              color: white;
+              background-color: rgb(51, 51, 51);
+              text-decoration: underline;
+              text-decoration-color: black;
+              text-align: center;
+            }
+
+            a:visited{
+              color: white;
+              background-color: rgb(51, 51, 51);
+              text-decoration: none;
+              text-decoration-color: black;
+              text-align: center;
+            }
+
+            a:hover{
+              color: white;
+              background-color: rgb(51, 51, 51);
+              text-decoration: underline;
+              text-align: center;
+            }
+
+            a:active{
+              color: white;
+              background-color: rgb(51, 51, 51);
+              text-decoration: none;
+              text-align: center;
+            }
+
+            .title{
+                color: black; 
+                background-color: lightsteelblue;
+                margin: 20px; padding: 20px;
+                font-style: initial; font-size: 65px;
+                text-align: center;
+            }
+
+            .chapter{
+              background-color: rgb(54, 54, 65);
+              color:white;
+
+              margin: 20px;
+              padding: 20px;
+
+              margin-top: 40px;
+            }
+
+            .subheader{
+                color: black;
+                background-color: darkseagreen; 
+
+                margin-left: 50px; 
+                margin-right: 50px;
+
+                padding: 10px;
+                height: min-content;
+                font-size: 40px;
+            }
+
+            .context{
+              background-color: wheat;
+
+              font-size: 24px;
+
+              margin-left: 75px; 
+              margin-right: 75px;
+            }
+
+            .paragraph{
+              font-size: 24px;
+            }
+
+            .text-center{
+              text-align: center;
+            }
+
+            .image-center{
+              margin-left: auto;
+              margin-right: auto;
+
+              display: block;
+            }
+
+            .top-marg{
+              margin-top: 5px;
+            }
+
+            .outline{
+              border: 2px solid black;
+            }
+
+            .rounded{
+              border-radius: 15px;
+            }
+
+            .circled{
+              border-radius: 50px;
+            }
+
+            .compressed{
+              width: 150px;
+              height: 175px;
+            }
+
+            .container{
+              display:flex;
+            }
+
+            .sidebar{
+              width: 275px;
+              background-color: rgb(201, 215, 224);
+
+              border-right: 2px solid black;
+            }
+
+            .sidebarelement{
+              margin-top: 10px;
+            }
+
+            .navbar{
+              background-color: rgb(51, 51, 51);
+              height: 45px;
+
+              border-bottom: 1px solid black;
+            }
+
+            .navbarelement{
+              background-color: rgb(75, 75, 75);
+              height: 45px;
+              color: white;
+              border: black;
+
+              text-decoration: none;
+
+              width: 45px;
+              height: 45px;
+
+              font-size: 45px;
+            }
+
+            .content{
+              flex: 1;
+            }
+    </style>
+
+<title>Table of Contents</title>
+</head>
+<body>
+<div class="navbar">
+    <a href="https://www.c-sharpcorner.com/UploadFile/ff2f08/understanding-polymorphism-in-C-Sharp/" target="_blank">C#</a>
+    <a href="https://www.c-sharpcorner.com/UploadFile/ff2f08/understanding-polymorphism-in-C-Sharp/" target="_blank" class="paragraph navbarelement">C++</a>
+</div>
+
+
+
+<div class="container outline">
+
+  <div class="sidebar">
+      <h1 class="title rounded">Learn</h1>
+      <hr>
+      <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank"><img src="cIMG.jpg" alt = "C# Tutorial" class="compressed image-center top-marg"></a>
+      <hr>
+      <a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-160" target="_blank"><img src="cpIMG.jpg" alt = "C++ Tutorial" class="compressed image-center top-marg"></a>
+      <hr>
+      <a href="https://docs.microsoft.com/de-de/learn/modules/intro-to-python/" target="_blank"><img src="ptonIMG.jpg" alt = "C++ Tutorial" class="compressed image-center top-marg"></a>
+      <hr>
+  </div>
+
+
+
+  <div class="content">
+    <h1 class="title">Important To Know</h1>
+    <br>
+        <div class="chapter">
+          
+          <h1 class="title rounded">C#</h1>
+          <p class="paragraph text-center">
+            C# is an object-oriented programming language <br>
+             from Microsoft that aims to combine the<br>
+              computing power of C++ with the programming<br>
+               ease of Visual Basic. C# is based on C++<br>
+                and contains features similar to those<br>
+                 of Java.<br>
+                </p>
+          <h3 class="subheader">Tips & Tricks</h3>
+          <p class="subheader context"><b>1. Add Access-Modifiers to your Properties in order to keep your Code clean and ordered.<br><br>
+                                          2. Avoid writing the same line(s) of Code repeatedly - Maybe there is some Code you should tidy up a bit!<br><br>
+                                          3. If you haven't yet - Learn Polymorphism! There's a link on Top if you wanna check it out!<br><br>
+                                          4. Use the Advantage of beeing able to create your own Types of Objects! This is really helpful!</b></p>
+        <hr>
+        <br>
+        <h1 class="title rounded">C++</h1>
+        <p class="paragraph text-center">
+          C# is an object-oriented programming language <br>
+           from Microsoft that aims to combine the<br>
+            computing power of C++ with the programming<br>
+             ease of Visual Basic. C# is based on C++<br>
+              and contains features similar to those<br>
+               of Java.<br>
+              </p>
+        <hr>
+        <br>
+
+        </div>
+  </div>
+
+</div>
+
+
+</body>
+</html> 
