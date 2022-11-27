@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/tailwind.min.css">
+    <title>Benjamin Gruber</title>
+
+    <style>
+        .start-message-background {
+            position: relative;
+            background-image: url(../img/about.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 100% 90%;
+            background-position-y: 0;
+        }
+        .start-message-background-wave {
+            position:absolute; /* Makes it so that Margin does not affect the element*/
+            inset: 0 0 0 0; /* TOP RIGHT BOTTOM LEFT*/
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='128' viewBox='0 0 1440 128'%3E%3Cpath class='header-wave' fill='%23FFF' d='M0,471 L1440,471 L1440,386.338583 C1331.33333,357.446194 1239,343 1163,343 C821.995497,343 821.995497,463.944882 426,463.944882 C262.447846,463.944882 120.447846,438.076115 0,386.338583 L0,471 Z' transform='translate(0 -343)'/%3E%3C/svg%3E");
+            background-position: center bottom; /* BACKGROUND-POSITION-X BACKGROUND-POSITION-Y*/
+            background-size: 101%; /* The size of the whole Image a bit bigger*/
+            background-repeat: no-repeat;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        li {
+            display:inline;
+        }
+    </style>
+</head>
+<body class="font-sans background-image" style="overflow: visible" id="body">
+    <nav class="bg-white w-full h-16 shadow-2xl fixed z-30">
+        <div class="h-16 container mx-auto">
+            <div class="flex justify-between h-full">
+                <div class="m-5 h-full">
+                    <ul type="none">
+                        <li>
+                            <a class="transition duration-300 hover:text-blue-500 font-semibold cursor-default" href="../index.html">
+                                Home
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul id="navbar" type="none" class="h-full m-5">
+                    <li>
+                        <a class="transition duration-300 hover:text-blue-500 font-semibold m-2 cursor-default"
+                           href="#START">
+                            Start
+                        </a>
+                    </li>
+                    <li>
+                        <a class="transition duration-300 hover:text-blue-500 font-semibold m-2 cursor-default"
+                           href="#PROJEKTE">
+                            Projekte
+                        </a>
+                    </li>
+                    <li>
+                        <a class="transition duration-300 hover:text-blue-500 font-semibold m-2 cursor-default"
+                           href="#HOBBYS">
+                            Ziele
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="h-screen" id="START">
+        <div class="start-message-background h-5/6">
+            <div class="start-message-background-wave flex justify-start items-center">
+                <div class="container w-3/5 ml-32 -mt-16 lg:w-2/5">
+                    <h1 class="text-6xl font-semibold text-white">
+                        Benjamin Gruber
+                    </h1>
+                    <p class="m-1 mt-5 text-white">
+                        Ich bin ein 15 Jahre alter Sch&uuml;ler der IT-HTL Ybbs und wohne zurzeit in Purgstall.
+                        Meine Hobbys sind Programmieren und Mathematik und am liebsten entwickle ich Spiele
+                        oder versuche neue Dinge in der Mathematik zu lernen bzw. herauszufinden!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="bg-white">
+        <section class="w-full -mt-32">
+            <div class="grid place-items-center mt-12">
+                <h2 class="text-gray-900 text-5xl font-bold">Was macht mich aus?</h2>
+                <div class="flex wrap justify-center items-start w-full mt-24">
+                    <div class="m-4 mt-10 w-1/5 h-max">
+                        <h3 class="text-gray-900 text-3xl font-semibold mb-4">Stärken</h3>
+                        <p class="mt-1">
+                            Meine St&auml;rken sind Motivation, &Auml;rgeiz und Teamwork. Bei vielen Dingen
+                            ist mir oft wichtiger herauszufinden, WARUM etwas ist anstatt DASS etwas ist,
+                            wodurch ich bereits eine Menge interessanter und wichtiger Erkenntnisse erreichen
+                            konnte!<br>Daraus leitet sich auch meine größte Stärke ab: <br>Die Neugierde!
+                        </p>
+                    </div>
+
+                    <div class="m-4 mt-10 w-1/5 h-max">
+                        <h3 class="text-gray-900 text-3xl font-semibold mb-4">Hobbys</h3>
+                        <p class="mt-1">
+                            Zu meinen Hobbys z&auml;hlt das Programmieren, die Mathematik aber auch das Spielen
+                            von zahlreichen Games, wie Minecraft und Pokemon, oder das Ansehen von Serien.
+                            Des Weiteren liebe ich es mir neue "Challenges" aufzugeben, um zus&auml;tzlich
+                            meine F&auml;higkeiten zu erweitern, aber vor allem um Spaß zu haben!
+
+                        </p>
+                    </div>
+
+                    <div class="m-4 mt-10 w-1/5 h-max">
+                        <h3 class="text-gray-900 text-3xl font-semibold mb-4">Ziele</h3>
+                        <p class="mt-1">
+                            Mein gr&ouml;&szlig;tes Ziel ist es der Welt mit etwas einzigartigem und hilfreichem
+                            in Erinnerung zu bleiben. Mir ist bewusst, dass viele Menschen kaum oder
+                            garnicht die Chance haben, ein Leben wie meines zu führen, weshalb ich
+                            mir fest vorgenommen habe diesen Vorteil f&uuml;r das Wohl der Menschheit einzusetzen!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br id="PROJEKTE">
+        <br>
+        <section class="w-full h-auto bg-gray-100">
+            <div class="grid place-items-center">
+                <h2 class="text-5xl mt-6 mb-12">
+                    Projekte
+                </h2>
+                <div class="w-full flex flex-wrap justify-center items-start container w-full lg:w-4/5">
+                    <!--Space Raptors-->
+                    <article class="xl:w-3/12 w-2/5 h-96 m-4 border-2 border-gray-300 rounded-md wow fadeInUp
+                                transition duration-500 hover:border-blue-400 hover:shadow-lg hover:bg-white shadow-sm">
+                        <div class="m-5">
+                            <h3 class="text-gray-900 font-bold text-3xl mb-16">Space Raptors</h3>
+                            <p class="text-gray-4ßß text-lg h-20">Angefangen mit dem Programmieren schrieb ich mein
+                                erstes Programm Space Raptors mit
+                                der Game Engine <a class="text-blue-500" href="https://unity.com/">Unity</a>.
+                            </p>
+
+                            <div class="grid place-items-end m-4 mt-24">
+                                <a href="../downloads/Space_Raptors_Setup.zip" class="cursor-pointer" download>
+                                    <div class="bg-blue-500 hover:bg-blue-700 transition duration-300
+                                     w-36 h-12 rounded-lg grid place-items-center">
+                                        <p class="text-white text-lg font-semibold">Download</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Monster Cranker-->
+                    <article class="xl:w-3/12 w-2/5 h-96 m-4 border-2 border-gray-300 rounded-md
+                                transition duration-500 hover:border-blue-400 hover:shadow-lg hover:bg-white shadow-sm">
+                        <div class="m-5">
+                            <h3 class="text-gray-900 font-bold text-3xl mb-16">Monster Cranker</h3>
+                            <p class="text-gray-4ßß text-lg h-20">Kurz nach Space Raptors folge Monster Cranker,
+                            das zweite Spiel, welches ich programmierte.</p>
+
+                            <div class="grid place-items-end m-4 mt-24">
+                                <a href="../downloads/Monster_Cranker_Setup.zip" class="cursor-pointer" download>
+                                    <div class="bg-blue-500 hover:bg-blue-700 transition duration-300
+                                     w-36 h-12 rounded-lg grid place-items-center">
+                                        <p class="text-white text-lg font-semibold">Download</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--RPG-Game-->
+                    <article id="RPG" class="xl:w-3/12 w-2/5 h-96 m-4 border-2 border-gray-300 rounded-md
+                                transition duration-500 hover:border-blue-400 hover:shadow-lg hover:bg-white shadow-sm">
+                        <div class="m-5">
+                            <h3 class="text-gray-900 font-bold text-3xl mb-16">RPG-Game</h3>
+                            <p class="text-gray-4ßß text-lg h-20">Als nächstes folgte ein etwas größeres Projekt.
+                            Mein erstes RPG-Game mit Kampf und Quest System.</p>
+                        </div>
+                    </article>
+
+                    <!--Space Raptors 2-->
+                    <article class="xl:w-3/12 w-2/5 h-96 m-4 border-2 border-gray-300 rounded-md
+                                transition duration-500 hover:border-blue-400 hover:shadow-lg hover:bg-white shadow-sm">
+                        <div class="m-5">
+                            <h3 class="text-gray-900 font-bold text-3xl mb-16">Space Raptors 2</h3>
+                            <p class="text-gray-4ßß text-lg h-20">Schon drei Monate nach dem ersten Teil folgte nun
+                            der Zweite Teil der Space Raptors Serie! Jetzt gibt es mehrere Levels, Bosse, Upgrade-Systeme
+                            und Erfolge.</p>
+
+                            <div class="grid place-items-end m-4 mt-24">
+                                <a href="../downloads/Space_Raptors_2_Setup.zip" class="cursor-pointer" download>
+                                    <div class="bg-blue-500 hover:bg-blue-700 transition duration-300
+                                     w-36 h-12 rounded-lg grid place-items-center">
+                                        <p class="text-white text-lg font-semibold">Download</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--TLOZ SE-->
+                    <article class="xl:w-3/12 w-2/5 h-96 m-4 border-2 border-gray-300 rounded-md
+                                transition duration-500 hover:border-blue-400 hover:shadow-lg hover:bg-white shadow-sm">
+                        <div class="m-5">
+                            <h3 class="text-gray-900 font-bold text-3xl mb-16">Zweiter RPG</h3>
+                            <p class="text-gray-4ßß text-lg h-20">Mein nächstes Spiel war The Legend of Zelda Swordless
+                                Edition. Dieses Spiel basierte auf dem
+                                <a class="text-blue-500" href="#RPG">RPG-Game</a>, wobei es
+                            neue Dungeons und Items enthält.</p>
+                        </div>
+                    </article>
+
+                    <!--Erste Website-->
+                    <article class="xl:w-3/12 w-2/5 h-96 m-4 border-2 border-gray-300 rounded-md
+                                transition duration-500 hover:border-blue-400 hover:shadow-lg hover:bg-white shadow-sm">
+                        <div class="m-5">
+                            <h3 class="text-gray-900 font-bold text-3xl mb-16">ImportantToKnow</h3>
+                            <p class="text-gray-4ßß text-lg h-20">
+                                Kurz nachdem ich mein zweites RPG-Game fertiggestellt hatte, lernte ich das
+                                Websiten-erstellen mit <a class="text-blue-500" href="https://unity.com/">W3-Schools</a>.
+                                <br>Ihr Name war ImportantToKnow.
+                            </p>
+
+                            <div class="grid place-items-end m-4 mt-24">
+                                <a href="../downloads/Chapter%201%20-%20Getting%20startet/ImportantToKnow.html" class="cursor-pointer" target="_blank">
+                                    <div class="bg-blue-500 hover:bg-blue-700 transition duration-300
+                                     w-36 h-12 rounded-lg grid place-items-center">
+                                        <p class="text-white text-lg font-semibold">Besuchen</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Zweite Website-->
+                    <article class="xl:w-3/12 w-2/5 h-96 m-4 border-2 border-gray-300 rounded-md
+                                transition duration-500 hover:border-blue-400 hover:shadow-lg hover:bg-white shadow-sm">
+                        <div class="m-5">
+                            <h3 class="text-gray-900 font-bold text-3xl mb-16">TheSimpleAmazon</h3>
+                            <p class="text-gray-4ßß text-lg h-20">
+                                <a class="text-blue-500" href="../downloads/Chapter%203%20-%20Simple%20I%20Amazon/Amazon%20Remake.html">The Simple Amazon</a> war mein
+                                erstes größeres Projekt. Wie der Name schon sagt, geht es um eine vereinfachte
+                                Version von Amazon.
+                            </p>
+
+                            <div class="grid place-items-end m-4 mt-24">
+                                <a href="../downloads/Chapter%203%20-%20Simple%20I%20Amazon/Amazon%20Remake.html" class="cursor-pointer" target="_blank">
+                                    <div class="bg-blue-500 hover:bg-blue-700 transition duration-300
+                                     w-36 h-12 rounded-lg grid place-items-center">
+                                        <p class="text-white text-lg font-semibold">Besuchen</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Zero-->
+                    <article class="xl:w-3/12 w-2/5 h-96 m-4 border-2 border-gray-300 rounded-md
+                                transition duration-500 hover:border-blue-400 hover:shadow-lg hover:bg-white shadow-sm">
+                        <div class="m-5">
+                            <h3 class="text-gray-900 font-bold text-3xl mb-16">The Fate of Zero - <br> Cold Fear</h3>
+                            <p class="text-gray-4ßß text-lg h-20">
+                                Eines meiner ersten "richtigen" Spieleprojekte, kurz TFOZ, welches aufgrund
+                                einiger Komplikationen bis heute noch nicht fertig ist...
+                            </p>
+                        </div>
+                    </article>
+
+                    <!--C-Games-->
+                    <article class="xl:w-3/12 w-2/5 h-96 m-4 border-2 border-gray-300 rounded-md
+                                transition duration-500 hover:border-blue-400 hover:shadow-lg hover:bg-white shadow-sm">
+                        <div class="m-5">
+                            <h3 class="text-gray-900 font-bold text-3xl mb-16">C - Programme</h3>
+                            <p class="text-gray-4ßß text-lg h-20">
+                                Kurze Zeit sp&auml;ter fing ich an mich intensiv mit C zu besch&auml;ftigen und programmierte damit schnell Spiele
+                                wie 2048, Pokemon oder das Game of Life,
+                                replizieren. Mein jetztiges Projekt mit dieser Sprache: Ein Multiplayer-Game (lokal)!
+                            </p>
+                        </div>
+                    </article>
+
+                    <!--Zukunft-->
+                    <article class="xl:w-3/12 w-2/5 h-96 m-4 border-2 border-gray-300 rounded-md
+                                transition duration-500 hover:border-blue-400 hover:shadow-lg hover:bg-white shadow-sm">
+                        <div class="m-5">
+                            <h3 class="text-gray-900 font-bold text-3xl mb-16">Wie geht es weiter?</h3>
+                            <p class="text-gray-4ßß text-lg h-20">
+                                Mein zurzeit gr&ouml;&szlig;tes Ziel ist es TFOZ fertigzustellen um damit dann ein Spiel nach meinen Idealen
+                                bauen zu k&ouml;nnen. Dabei ist es mir aber vor allem wichtig nicht in ein Burnout zu geraten, denn dadurch
+                                habe ich bereits monate-lange Arbeit verloren!
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+                <br id="HOBBYS">
+                <br>
+            </div>
+        </section>
+        <section class="bg-white w-full h-auto mt-24">
+            <div class="grid place-items-center">
+                <h2 class="text-5xl mt-6 mb-12">
+                    Lebensziele & Tr&auml;ume
+                </h2>
+                <p class="container w-2/5 text-center">
+                    In meinem sp&auml;teren Leben m&ouml;chte ich gerne als professioneller Mathematiker und Physiker in den Bereichen der Quantenphysik und Astrophysik meine Arbeit leisten.
+                    Weiters habe ich vor, mehrere Spiele zu entwickeln, welche einerseits Story-geleitet, andererseits Open-World sind.<br><br>
+
+                    Mein gr&ouml;&szlig;ter Traum ist es der Menschheit mit guten Taten in Erinnerung zu bleiben!
+                </p>
+                <img src="../img/Benjamin.png" alt="Picture of myself" class="w-1/5 mt-12 -mb-32 rounded-full shadow-2xl">
+            </div>
+        </section>
+    </main>
+    <div class="h-72 bg-white"></div>
+
+    <footer class="w-full h-24 bg-gray-200" style="border-top: solid rgba(0,81,255,0.4)">
+        <div class="grid place-items-center">
+            <p class="mt-5">@Made by <strong class="text-gray-900">Benjamin Gruber</strong></p>
+            <aside>Thank you for visiting this Page!</aside>
+        </div>
+    </footer>
+
+    <script src="../js/wow.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>
